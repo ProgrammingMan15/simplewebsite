@@ -1,0 +1,124 @@
+/*  
+hover:#ecf0f1
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 13vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo img{
+    width: 60px;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+}
+.hero{
+    width: 100%;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h1{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 20px;
+}
+/* project */
+.project{
+    width: 100%;
+    height: auto;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.box{
+    width: 30%;
+    height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+}
+.text{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.2s;
+}
+.text h3{
+    color: white;
+}
+.box:hover .text{
+    opacity: 1;
+}
+/* footer */
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: #202020;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fbox{
+    display: flex;
+    gap: 20px;
+}
+.fbox i{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+.fbox i:hover{
+    background-color:#ecf0f1 ;
+}
